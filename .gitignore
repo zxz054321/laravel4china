@@ -8,3 +8,5 @@ Homestead.json
 #IDE
 /nbproject
 /.idea
+.phpstorm.meta.php
+_ide_helper.php
