@@ -38,6 +38,8 @@
             "php artisan key:generate"
         ],
         "post-install-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "php artisan key:generate",
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan ide-helper:generate",
             "php artisan ide-helper:meta",
