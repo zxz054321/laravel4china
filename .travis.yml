@@ -13,4 +13,7 @@ before_install:
 install:
   - travis_retry composer install --no-interaction --prefer-dist
 
-script: vendor/bin/phpunit
+script:
+  - mv .env.example .env
+  - php artisan key:generate
+  - vendor/bin/phpunit

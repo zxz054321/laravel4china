@@ -1,3 +1,20 @@
+# Laravel Boilerplate
+
+[![Build Status](https://travis-ci.org/zxz054321/laravel-boilerplate.svg?branch=master)](https://travis-ci.org/zxz054321/laravel-boilerplate)
+
+对官方源码作了适量修改，使之更符合国情、更适合作为新项目基石，但不建议初学者使用。
+
+主要特性：
+
+1. 基于 Laravel 5.2
+2. 内置中文语言包
+3. 时区默认为中国上海
+4. 更优秀的 IDE 代码提示
+5. .gitignore 忽略 IDE 相关文件
+6. 推崇 Repository 设计模式
+7. 演示页面去除 Google 字体引用
+8. CSS 预编译器以 Less 为主
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
