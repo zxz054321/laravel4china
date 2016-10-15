@@ -6,14 +6,17 @@
 
 主要特性：
 
-1. 基于 Laravel 5.2
-2. 内置中文语言包
-3. 时区默认为中国上海
-4. 更优秀的 IDE 代码提示
-5. .gitignore 忽略 IDE 相关文件
-6. 推崇 Repository 设计模式
-7. 演示页面去除 Google 字体引用
-8. CSS 预编译器以 Less 为主
+1. 基于 Laravel 5.2 （版本选择的原则是：最新的稳定）
+2. 自带 Laravel Installer 可一键安装框架依赖、一键执行优化、自动设置符号链接以及自动设置权限
+3. 自带 Node Module Installer 可一键安装 Laravel Elixir 并执行 gulp 任务
+4. 自动生成 APP_KEY
+5. 内置中文语言包
+6. 时区默认为中国上海
+7. 更优秀的 IDE 代码提示
+8. .gitignore 忽略 IDE 相关文件
+9. 演示页面去除 Google 字体引用
+10. CSS 预编译器以 Less 为主
+11. 推崇 Repository 设计模式
 
 # Laravel PHP Framework
 
