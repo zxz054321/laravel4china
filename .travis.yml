@@ -11,9 +11,9 @@ before_install:
   - travis_retry composer self-update
 
 install:
+  - chmod 777 install.sh
+  - ./install.sh -q -k -e .env.example
   - travis_retry composer install --no-interaction --prefer-dist
 
 script:
-  - mv .env.example .env
-  - php artisan key:generate
   - vendor/bin/phpunit
