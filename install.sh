@@ -28,7 +28,7 @@ while getopts 'qe:ko' opt; do
 done
 
 #Check arguments
-if [ $option_quiet = 1 ]; then
+if [[ $option_quiet = 1 ]]; then
     if [ -z "$option_env" ]; then
         error 'Option [-e] must be set in quiet mode!'
         exit 2
