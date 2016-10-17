@@ -24,7 +24,12 @@ class ComposerScripts extends \Illuminate\Foundation\ComposerScripts
         (new Dotenv($envFile))->load();
 
         if (empty(env('APP_KEY'))) {
-            passthru('php artisan key:generate');
+            require $laravel->bootstrapPath() . '/app.php';
+
+            /** @var Kernel $artisan */
+            $artisan = app(\Illuminate\Contracts\Console\Kernel::class);
+
+            $artisan->call('key:generate');
         }
     }
 }
