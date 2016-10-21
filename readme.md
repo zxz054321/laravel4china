@@ -7,8 +7,8 @@
 主要特性：
 
 1. 基于 Laravel 5.2 （版本选择的原则是：最新的稳定）
-2. 自带 Laravel Installer 可一键安装框架依赖、一键执行优化、自动设置符号链接以及自动设置权限
-3. 自带 Node Module Installer 可一键安装 Laravel Elixir 并执行 gulp 任务
+2. Laravel 安装器可一键安装框架依赖、一键执行优化、自动设置符号链接以及自动设置权限
+3. Node 模块安装器可一键安装 Laravel Elixir 并执行 gulp 任务
 4. 自动生成 APP_KEY
 5. 内置中文语言包
 6. 时区默认为中国上海
@@ -33,18 +33,20 @@
 
 ### 使用方法
 
-在应用根目录下执行命令
+在应用根目录下执行命令：
 
-`sudo chmod 777 install.sh && ./install.sh`
+```
+sudo chmod 777 install.sh && ./install.sh
+```
 
 ### 参数说明
 
 | 参数   | 说明                                       |
 | ---- | ---------------------------------------- |
 | -q   | 安静模式，脚本将静默执行，适用于自动部署的场景                  |
-| -e   | 指定env文件。在安静模式下必须指定此参数。示例 `-e .env.example` |
-| -k   | 执行 `php artisan key:generate`            |
-| -o   | 执行autoload、路由、配置优化                       |
+| -e   | （安静模式下必填）指定 env 文件。示例： `-e .env.example` |
+| -k   | （可选）执行 `php artisan key:generate`        |
+| -o   | （可选）执行 autoload、路由、配置优化                  |
 
 ## Node 模块安装器
 
@@ -58,9 +60,11 @@
 
 ### 使用方法
 
-在应用根目录下执行命令
+在应用根目录下执行命令：
 
-`sudo chmod 777 install-node.sh && ./install-node.sh`
+```
+sudo chmod 777 install-node.sh && ./install-node.sh
+```
 
 # Laravel PHP Framework
 
