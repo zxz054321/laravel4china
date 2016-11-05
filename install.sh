@@ -44,6 +44,8 @@ if [ ! -f "/usr/local/bin/composer" ]; then
     php composer-setup.php
     php -r "unlink('composer-setup.php');"
     sudo mv composer.phar /usr/local/bin/composer
+    echo 'Setting China mirror as default.'
+    composer config -g repo.packagist composer https://packagist.phpcomposer.com
     echo $'Composer installed.\n'
 fi
 
