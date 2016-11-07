@@ -73,9 +73,9 @@ fi
 if [ ! -d "vendor" ]; then
     composer install --no-dev
 
-    if [ $option_key = 1 ]; then
+    if [[ $option_key = 1 ]]; then
         input=y
-    elif [ $option_quiet = 1 ]; then
+    elif [[ $option_quiet = 1 ]]; then
         input=n
     else
         echo "Generate application key? [y/n]"
@@ -88,9 +88,9 @@ if [ ! -d "vendor" ]; then
 fi
 
 #Optimizations
-if [ $option_optimize = 1 ]; then
+if [[ $option_optimize = 1 ]]; then
     input=y
-elif [ $option_quiet = 1 ]; then
+elif [[ $option_quiet = 1 ]]; then
     input=n
 else
     echo "Require full optimization? [y/n]"
