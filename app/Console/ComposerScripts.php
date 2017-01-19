@@ -14,6 +14,11 @@ use Illuminate\Foundation\Application;
 
 class ComposerScripts extends \Illuminate\Foundation\ComposerScripts
 {
+    /**
+     * @param Event $event
+     *
+     * Generate app key if not exists
+     */
     public static function postInstall(Event $event)
     {
         parent::postInstall($event);
