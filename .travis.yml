@@ -1,19 +1,33 @@
 language: php
 
 php:
-  - 5.5.9
-  - 5.5
   - 5.6
   - 7.0
   - 7.1
+
+env:
+  global:
+    - setup=basic
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.6
+      env: setup=lowest
+    - php: 5.6
+      env: setup=stable
+
+cache:
+  directories:
+    - $HOME/.composer/cache
 
 before_install:
   - travis_retry composer self-update
 
 install:
   - chmod 777 install.sh
-  - ./install.sh -q -k -e .env.example
-  - travis_retry composer install --no-interaction --prefer-dist
+  - if [[ $setup = 'basic' ]]; then ./install.sh -q -k -e .env.example; travis_retry composer install --no-interaction --prefer-dist --no-suggest; fi
+  - if [[ $setup = 'stable' ]]; then ./install.sh -q -k -e .env.example; travis_retry composer update --prefer-dist --no-interaction --prefer-stable --no-suggest; fi
+  - if [[ $setup = 'lowest' ]]; then ./install.sh -q -k -e .env.example; travis_retry composer update --prefer-dist --no-interaction --prefer-lowest --prefer-stable --no-suggest; fi
 
-script:
-  - vendor/bin/phpunit
+script: vendor/bin/phpunit
