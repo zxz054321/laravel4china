@@ -10,6 +10,7 @@
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.3",
+        "doctrine/dbal": "^2.5",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.0",
