@@ -8,7 +8,7 @@ hash node 2>/dev/null || {
     echo "Installing Node.js v6.x LTS..."
     curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     sudo apt-get install -y nodejs
-    npm config set registry http://registry.cnpmjs.org
+    npm config set registry https://registry.npm.taobao.org
 }
 
 echo "Installing node modules..."
