@@ -13,7 +13,9 @@ var elixir = require('laravel-elixir');
 
 elixir(function (mix) {
     mix.less([
-        'site.less',
+        'app.less',
+        // 'utilities.less',
+        // 'angular.less',
         // More sytles...
     ], 'public/all.css');
 
