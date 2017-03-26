@@ -18,7 +18,9 @@ elixir((mix) => {
         .webpack('app.js');
 
     mix.less([
-        'site.less',
+        'app.less',
+        // 'utilities.less',
+        // 'angular.less',
         // More sytles...
     ]);
 });
