@@ -17,10 +17,8 @@ elixir((mix) => {
     mix.sass('app.scss')
         .webpack('app.js');
 
-    mix.less([
-        'app.less',
-        // 'utilities.less',
-        // 'angular.less',
-        // More sytles...
-    ]);
+    if ('production' == process.env.NODE_ENV) {
+        // mix.version('css/app.css');
+        // mix.version('js/app.js');
+    }
 });
