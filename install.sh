@@ -102,8 +102,7 @@ if [ "$input" == 'y' ]; then
     php artisan config:cache
 fi
 
-sudo ln -sr storage/app/public public/storage
-echo "Symbolic link created for public/storage."
+php artisan storage:link
 
 echo "Setting permissons..."
 sudo chown -R www.www .
