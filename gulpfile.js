@@ -18,7 +18,12 @@ elixir((mix) => {
         .webpack('app.js');
 
     if ('production' == process.env.NODE_ENV) {
+        // Single file:
         // mix.version('css/app.css');
+        // or
         // mix.version('js/app.js');
+
+        // Multiple files:
+        // mix.version(['css/all.css', 'js/app.js']);
     }
 });
