@@ -51,7 +51,7 @@ sudo chmod 777 install.sh && ./install.sh
 
 此安装器脚本针对 Ubuntu 系统编写，可自动完成以下操作：
 
-1. 全局安装 Node.js v4.x LTS
+1. 全局安装 Node.js v6.x LTS
 2. 设置 npm 使用淘宝镜像，大大提高下载速度
 3. 全局安装 gulp
 4. 安装 Laravel Elixir
