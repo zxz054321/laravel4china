@@ -1,6 +1,6 @@
 # Laravel 中国版
 
-[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=master)](https://travis-ci.org/zxz054321/laravel4china)
+[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=5.3)](https://travis-ci.org/zxz054321/laravel4china)
 
 对官方源码作了适量修改，使之更符合国情、更适合作为新项目基石，但不建议初学者使用。
 
@@ -51,7 +51,7 @@ sudo chmod 777 install.sh && ./install.sh
 
 此安装器脚本针对 Ubuntu 系统编写，可自动完成以下操作：
 
-1. 全局安装 Node.js v4.x LTS
+1. 全局安装 Node.js v6.x LTS
 2. 设置 npm 使用淘宝镜像，大大提高下载速度
 3. 全局安装 gulp
 4. 安装 Laravel Elixir
