@@ -1,14 +1,14 @@
 # Laravel 中国版
 
-[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=5.3)](https://travis-ci.org/zxz054321/laravel4china)
+[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=master)](https://travis-ci.org/zxz054321/laravel4china)
 
 对官方源码作了适量修改，使之更符合国情、更适合作为新项目基石，但不建议初学者使用。
 
 主要特性：
 
-1. 基于 Laravel 5.3 （版本选择的原则是：最新的稳定）
+1. 基于 Laravel 5.4 （版本选择的原则是：最新的稳定）
 2. Laravel 安装器可一键安装框架依赖、一键执行优化、自动设置符号链接以及自动设置权限
-3. Node 模块安装器可一键安装 Laravel Elixir 并执行 gulp 任务
+3. Node 模块安装器可一键安装 Laravel Mix 并执行 Mix 任务
 4. 自动生成 APP_KEY
 5. 内置中文语言包
 6. 时区默认为中国上海
@@ -53,9 +53,8 @@ sudo chmod 777 install.sh && ./install.sh
 
 1. 全局安装 Node.js v6.x LTS
 2. 设置 npm 使用淘宝镜像，大大提高下载速度
-3. 全局安装 gulp
-4. 安装 Laravel Elixir
-5. 执行 `gulp --production` 编译前端资源
+3. 安装 Laravel Mix
+4. 执行 `npm run production` 编译前端资源
 
 ### 使用方法
 
