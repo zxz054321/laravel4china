@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Laravel Installer"
-echo $'by Abel <zxz054321@163.com>\n'
+echo $'by Abel <zxz054321@foxmail.com>\n'
 
 error(){
     RED_COLOR='\E[1;31m'

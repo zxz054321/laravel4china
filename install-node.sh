@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Node Module Installer For Laravel"
-echo $'by Abel <zxz054321@163.com>\n'
+echo $'by Abel <zxz054321@foxmail.com>\n'
 
 hash node 2>/dev/null && { echo "Node.js already installed."; }
 hash node 2>/dev/null || {
@@ -12,6 +12,5 @@ hash node 2>/dev/null || {
 }
 
 echo "Installing node modules..."
-sudo npm install --global gulp
 sudo npm install #--no-bin-links
-sudo gulp --production
+sudo npm run production
