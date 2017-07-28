@@ -15,7 +15,6 @@
 7. 更优秀的 IDE 代码提示
 8. .gitignore 忽略 IDE 相关文件
 9. 演示页面去除 Google 字体引用
-10. 推崇 Repository 设计模式
 
 ## Laravel 安装器
 
