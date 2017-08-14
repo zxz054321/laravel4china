@@ -39,7 +39,7 @@
         ],
         "post-install-cmd": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "App\\Console\\ComposerScripts::postInstall",
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
             "php artisan safely:ide-helper",
             "php artisan optimize"
         ],
