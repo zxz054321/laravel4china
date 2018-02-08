@@ -1,6 +1,6 @@
 # Laravel 中国版
 
-[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=master)](https://travis-ci.org/zxz054321/laravel4china)
+[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=5.4)](https://travis-ci.org/zxz054321/laravel4china)
 
 对官方源码作了适量修改，使之更符合国情、更适合作为新项目基石，但不建议初学者使用。
 
