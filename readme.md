@@ -7,13 +7,13 @@
 主要特性：
 
 1. 基于 Laravel 5.5 （版本选择的原则是：最新的稳定版）
-2. Laravel 安装器可一键安装框架依赖、一键执行优化、自动设置符号链接以及自动设置权限
-3. Node 模块安装器可一键安装 Laravel Mix 并执行 Mix 任务
-4. 自动生成 APP_KEY
+2. Laravel 安装器可一键执行常用的部署命令
+3. Node 模块安装器可一键安装 Laravel Mix 并编译静态资源
+4. 自动生成 IDE 代码提示辅助文件（基于 [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)）
+5. 自动生成 APP_KEY
 5. 内置中文语言包
 6. 时区默认为中国上海
-7. 更优秀的 IDE 代码提示
-8. .gitignore 忽略 IDE 相关文件
+7. .gitignore 忽略 IDE 相关文件
 9. 演示页面去除 Google 字体引用
 
 ## Laravel 安装器
@@ -26,7 +26,6 @@
 4. 执行 `php artisan key:generate` 生成App key
 5. 执行优化
 6. 创建符号链接（将` public/storage` 目录链接去 `storage/app/public`目录）
-7. 设置应用目录用户为 `www`
 8. 赋予 `bootstrap/cache` 目录和 `storage` 目录读写权限
 
 ### 使用方法
@@ -52,7 +51,7 @@ sudo chmod 777 install.sh && ./install.sh
 
 1. 全局安装 Node.js v6.x LTS
 2. 设置 npm 使用淘宝镜像，大大提高下载速度
-3. 安装 Laravel Mix
+3. 安装 Laravel Mix 及相关 Node.js 依赖
 4. 执行 `npm run production` 编译前端资源
 
 ### 使用方法
