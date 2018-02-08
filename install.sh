@@ -104,8 +104,7 @@ fi
 
 php artisan storage:link
 
-echo "Setting permissons..."
-sudo chown -R www.www .
+echo "Setting file permissions..."
 sudo chmod 775 bootstrap/cache
 sudo chmod -R 775 storage
 
