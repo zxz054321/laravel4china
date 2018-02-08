@@ -38,6 +38,8 @@ class SafelyIdeHelper extends Command
      */
     public function handle()
     {
+        \Artisan::call('clear-compiled');
+
         try {
             \Artisan::call('ide-helper:generate');
             \Artisan::call('ide-helper:meta');
