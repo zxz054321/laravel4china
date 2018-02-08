@@ -27,7 +27,7 @@ while getopts 'qe:ko' opt; do
     esac
 done
 
-#Check arguments
+# Check arguments
 if [[ $option_quiet = 1 ]]; then
     if [ -z "$option_env" ]; then
         error 'Option [-e] must be set in quiet mode!'
@@ -35,9 +35,10 @@ if [[ $option_quiet = 1 ]]; then
     fi
 fi
 
+echo 'Setting file permissions...'
 sudo chmod -R 777 .
 
-#Composer
+# Composer
 if [ ! -f "/usr/local/bin/composer" ]; then
     echo "Downloading Composer..."
     php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
@@ -49,7 +50,7 @@ if [ ! -f "/usr/local/bin/composer" ]; then
     echo $'Composer installed.\n'
 fi
 
-#Setup .env
+# Setup .env
 if [ ! -f ".env" ]; then
     if [ -n "$option_env" ]; then
             input=$option_env
@@ -69,7 +70,7 @@ if [ ! -f ".env" ]; then
     fi
 fi
 
-#Deal with vendors
+# Deal with vendors
 if [ ! -d "vendor" ]; then
     composer install --no-dev
 
@@ -87,7 +88,7 @@ if [ ! -d "vendor" ]; then
     fi
 fi
 
-#Optimizations
+# Optimizations
 if [[ $option_optimize = 1 ]]; then
     input=y
 elif [[ $option_quiet = 1 ]]; then
@@ -97,7 +98,6 @@ else
     read input
 fi
 if [ "$input" == 'y' ]; then
-    php artisan optimize --force
     php artisan route:cache
     php artisan config:cache
 fi
