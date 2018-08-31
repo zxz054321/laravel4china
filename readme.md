@@ -1,6 +1,6 @@
 # Laravel 中国版
 
-[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=master)](https://travis-ci.org/zxz054321/laravel4china)
+[![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=5.5)](https://travis-ci.org/zxz054321/laravel4china)
 
 对官方原版源码作了适量修改，但仍保持原汁原味，与官方原版的使用体验完全一致。Laravel 中国版所做的修改都是可选的，使得框架更符合国情、更适合作为新项目基石。仅建议具有一定 Laravel 经验的开发者使用。
 
