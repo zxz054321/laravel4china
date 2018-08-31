@@ -2,11 +2,11 @@
 
 [![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=master)](https://travis-ci.org/zxz054321/laravel4china)
 
-对官方原版源码作了适量修改，但仍保持原汁原味，与官方原版的使用体验完全一致。Laravel 中国版所做的修改都是可选的，使得框架更符合国情、更适合作为新项目基石。仅建议具有一定 Laravel 经验的开发者使用。
+对官方原版源码作了适量修改，但仍保持原汁原味，与官方原版的使用体验完全一致。Laravel 中国版所做的修改都是可选的，这使得框架更符合国情、更适合作为新项目基石。仅建议**具有一定 Laravel 经验**的开发者使用。
 
 主要特性：
 
-1. 基于 Laravel 5.5 （版本选择的原则是：最新的稳定版）
+1. 基于 Laravel 5.6 （版本选择的原则是：最新的稳定版）
 2. Laravel 安装器可一键执行常用的部署命令
 3. Node 模块安装器可一键安装 Laravel Mix 并编译静态资源
 4. 自动生成 IDE 代码提示辅助文件（基于 [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)）
@@ -97,6 +97,7 @@ We would like to extend our thanks to the following sponsors for helping fund on
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
 - **[British Software Development](https://www.britishsoftware.co)**
 - [Fragrantica](https://www.fragrantica.com)
 - [SOFTonSOFA](https://softonsofa.com/)
