@@ -12,12 +12,12 @@ return [
     |
     */
 
-    'accepted'             => ':attribute 必须接受。',
+    'accepted'             => '您必须接受 :attribute。',
     'active_url'           => ':attribute 不是一个有效的网址。',
     'after'                => ':attribute 必须要晚于 :date。',
     'after_or_equal'       => ':attribute 必须要等于 :date 或更晚。',
     'alpha'                => ':attribute 只能由字母组成。',
-    'alpha_dash'           => ':attribute 只能由字母、数字和斜杠组成。',
+    'alpha_dash'           => ':attribute 只能由字母、数字、短划线(-)和下划线(_)组成。',
     'alpha_num'            => ':attribute 只能由字母和数字组成。',
     'array'                => ':attribute 必须是一个数组。',
     'before'               => ':attribute 必须要早于 :date。',
@@ -31,6 +31,7 @@ return [
     'boolean'              => ':attribute 必须为布尔值。',
     'confirmed'            => ':attribute 两次输入不一致。',
     'date'                 => ':attribute 不是一个有效的日期。',
+    'date_equals'          => ':attribute 必须要等于 :date。',
     'date_format'          => ':attribute 的格式必须为 :format。',
     'different'            => ':attribute 和 :other 必须不同。',
     'digits'               => ':attribute 必须是 :digits 位的数字。',
@@ -94,7 +95,7 @@ return [
     'regex'                => ':attribute 格式不正确。',
     'required'             => ':attribute 不能为空。',
     'required_if'          => '当 :other 为 :value 时 :attribute 不能为空。',
-    'required_unless'      => '当 :other 不为 :value 时 :attribute 不能为空。',
+    'required_unless'      => '当 :other 不为 :values 时 :attribute 不能为空。',
     'required_with'        => '当 :values 存在时 :attribute 不能为空。',
     'required_with_all'    => '当 :values 存在时 :attribute 不能为空。',
     'required_without'     => '当 :values 不存在时 :attribute 不能为空。',
@@ -106,11 +107,13 @@ return [
         'string'  => ':attribute 必须是 :size 个字符。',
         'array'   => ':attribute 必须为 :size 个单元。',
     ],
+    'starts_with'          => ':attribute 必须以 :values 为开头。',
     'string'               => ':attribute 必须是一个字符串。',
     'timezone'             => ':attribute 必须是一个合法的时区值。',
     'unique'               => ':attribute 已经存在。',
     'uploaded'             => ':attribute 上传失败。',
     'url'                  => ':attribute 格式不正确。',
+    'uuid'                 => ':attribute 必须是有效的 UUID。',
 
     /*
     |--------------------------------------------------------------------------
