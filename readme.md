@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/zxz054321/laravel4china.svg?branch=master)](https://travis-ci.org/zxz054321/laravel4china)
 
+**⚠️ 此项目已废弃‼️请移步：https://github.com/laravel4china/laravel**
+
+
+
 对官方原版源码作了适量修改，但仍保持原汁原味，与官方原版的使用体验完全一致。Laravel 中国版所做的修改都是可选的，这使得框架更符合国情、更适合作为新项目基石。仅建议**具有一定 Laravel 经验**的开发者使用。
 
 主要特性：
@@ -133,3 +137,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
